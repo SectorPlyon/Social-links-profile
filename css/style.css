@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt_wght.ttf") format("truetype");
+  font-weight: 300 600 700;
+  font-style: normal;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main {
+  background-color: #141414;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.main .container {
+  width: 384px;
+  padding: 40px;
+  background-color: #1F1F1F;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .main .container {
+    width: 456px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .main .container {
+    width: 327px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .main .container {
+    width: 70%;
+    padding: 24px;
+  }
+}
+.main .container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Inter";
+}
+@media screen and (max-width: 480px) {
+  .main .container .title {
+    text-align: center;
+  }
+}
+.main .container .title__photo {
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+.main .container .title__name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.main .container .title__geo {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #C4F82A;
+  margin-bottom: 24px;
+}
+.main .container .title__desc {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 480px) {
+  .main .container .title__desc {
+    flex-wrap: wrap;
+  }
+}
+.main .container .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .container .social-links a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px 30%;
+  background-color: #333333;
+  border-radius: 5px;
+  border-color: transparent;
+  text-decoration: none;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.main .container .social-links a:hover {
+  background-color: #698515;
+}
+.main .attribution {
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.main .attribution a {
+  text-decoration: none;
+  color: gray;
+}
+.main .attribution a:hover {
+  color: #698515;
+}/*# sourceMappingURL=style.css.map */

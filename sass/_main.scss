@@ -1,0 +1,108 @@
+.main {
+  background-color: $color-grey-900;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+
+  .container {
+    width: 384px;
+    padding: 40px;
+    background-color: $color-grey-800;
+    border-radius: 10px;
+
+    @media screen and (max-width: 768px) {
+      width: 456px;
+    }
+
+    @media screen and (max-width: 570px) {
+      width: 327px;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 70%;
+      padding: 24px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: 'Inter';
+
+      @media screen and (max-width: 480px) {
+        text-align: center;
+      }
+
+      &__photo {
+        border-radius: 50%;
+        margin-bottom: 24px;
+      }
+
+      &__name {
+        @include font(24px, 600, 36px);
+        color: $color-white;
+      }
+
+      &__geo {
+        @include font(14px, 700, 21px);
+        color: $color-lima;
+        margin-bottom: 24px
+      }
+
+      &__desc {
+        @include font(14px, 600, 21px);
+        color: $color-white;
+        margin-bottom: 24px;
+
+        @media screen and (max-width: 480px) {
+          flex-wrap: wrap;
+        }
+      }
+    }
+    
+    .social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      a {
+        display: inline-block;
+        text-align: center;
+        padding: 16px 30%;
+        background-color: $color-grey-700;
+        border-radius: 5px;
+        border-color: transparent;
+        text-decoration: none;
+        font-family: 'Inter';
+        @include font(14px, 700, 21px);
+        color: $color-white;
+
+        &:hover{
+          background-color: $color-olive;
+        }
+      }
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+
+    a {
+      text-decoration: none;
+      color: gray;
+
+      &:hover {
+        color: $color-olive;
+      }
+    }
+  }
+}
